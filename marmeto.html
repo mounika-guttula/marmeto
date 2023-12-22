@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/8f3b4aea77.js" crossorigin="anonymous"></script>
+    <style>
+        .cards-container {
+            border: 2px solid black;
+            border-radius: 4px;
+            width: 680px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div>
+            <h1 class="heading">PLD</h1>
+            <div class="top-container">
+                <input type="text" placeholder="Type something to search...." id="searchBar" placeholder="Search..." oninput="searchProducts(this.value)">
+
+                <button class="custom-button" onclick="toggleView('list')"><i class="fa-solid fa-list size"></i></button>
+                <button class="custom-button" onclick="toggleView('grid')"><i class="fa-solid fa-border-none size"></i></button>
+            </div>
+
+            <div class="cards-container">
+                <div id="productContainer" class="show"></div>
+                <div id="productContainerOne" class="off"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
